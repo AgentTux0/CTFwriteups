@@ -1,2 +1,5 @@
 # CTFwriteups
-Writeups from CTF's I participate in.
+
+### CTFs
+- riceteacatpanda 
+- ringzer0
