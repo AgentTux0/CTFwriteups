@@ -1,0 +1,22 @@
+[*] riceteacatpanda
+[*] Category: general
+[*] Challenge: Types of rice and cookies, because those definitely go together well
+[*] Points: 100
+[*] Author: c4melman
+
+- - - Challenge text - - -
+It's important to know all the different kinds of rice. After all, what kind of cook would Delphine be if she couldn't identify the different types? But GIANt needs to learn too. So Delphine is having him research different kinds of cookies. She wants him to find the cookie that help websites remember her information and settings when she visit them in the future. Creepy? Yes. Important? Also yes.
+- - - - - - - - - - - - - -
+This challenge still follows typical flag format, just wrap your answer with rtcp{answer_here}.
+
+Non-case sensitive.
+- - - - - - - - - - - - - -
+
+So for this challenge there is one thing that sticks out in the challenge description; "She wants him to find the cookie that help websites remember her information and settings when she visit them in the future". Could the answer simply be the right kind of cookie?
+I'm not to experienced with cookies, so I found a list of the different cookies, and the description of persistent cookies seems to fit the bill:
+
+"As the name suggests, this type of cookie is saved on your computer so that when you close it down and start it up again, it can still be there. [...] If you login into a website, then shut down your computer, start it up again, and go back to the website to find you are still logged in - then it is using a persistent cookie to remember you."
+
+Could persistent cookie be the answer?
+
+[*] Flag: rtcp{persistent_cookie}

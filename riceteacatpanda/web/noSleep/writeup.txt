@@ -1,0 +1,15 @@
+[*] riceteacatpanda
+[*] Category: web
+[*] Challenge: No Sleep
+[*] Points: 100
+[*] Author: c4melman
+
+- - - Challenge Text - - -
+Jess doesn't get enough sleep, since he's such a gamer so in this challenge, you'll be staying up with him until 4:00 in the morning :D on a Monday! Let's go, gamers!
+- - - - - - - - - - - - - -
+https://riceteacatpanda.wtf/onlyrealgamers
+- - - - - - - - - - - - - -
+
+When visiting this page I was greeted by a countdown for the monday after the end of the CTF. We can't wait this long... If we peek about in the developer console we can see that we have a cookie called gamerfuel, set to monday at 04:20. Let's try changing it to the current date and time...
+
+[*] Flag: rtcp{w0w_d1d_u_st4y_up?}
