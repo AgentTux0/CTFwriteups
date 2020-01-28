@@ -1,5 +1,5 @@
 # CTFwriteups
 
 ### CTFs
-- riceteacatpanda 
-- ringzer0
+- [riceteacatpanda](https://github.com/C4MELMAN/CTFwriteups/tree/master/riceteacatpanda)
+
