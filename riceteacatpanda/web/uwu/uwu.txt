@@ -1,0 +1,26 @@
+[*] riceteacatpanda
+[*] Category: web
+[*] Challenge: uwu?
+[*] Points: 125
+[*] Author: c4melman
+
+- - - CHALLENGE TEXT - - -
+ᵘʷᵘ oh no ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ hecc sorry guys ᵘʷᵘ 
+ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ sorry im dropping ᵘʷᵘ my uwus all over 
+the ᵘʷᵘ place ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ oh no I lost one ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ
+
+ah, Jake, you idiot
+- - - - - - - - - - - - - -
+
+So in this challenge we are provided with a url: https://riceteacatpanda.wtf/uwu.
+When we follow this url we are presented with several pages that redirects us to another page, and they are all filled with uwus.
+In some of the pages we can see glimpses of non uwu text. This indicates that we probably will be able to find our flag in the sea of uwu.
+To explore this further I quickly made a script that pulled the content from each of the pages, and stripped them of any uwus.
+So I get a fun little story, but there seems to be no flag in here? This is what threw me off and made me fail this challenge.
+After reading another writeup I learned that the flag contained uwu, thus my script broke the flag.
+I then did some modifications on my first script to make it.
+The script will loop until there are no more redirections indicated in the pages, or if it finds the flag with the given regex.
+
+The script is a bit overkill, but I made it for practice more than functionality, it would probably be more efficient to use burp or to save the sites and find the flag manually.
+
+[*] Flag: rtcp{uwu_,_1_f0und_y0u}
