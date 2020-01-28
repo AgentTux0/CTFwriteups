@@ -1,16 +1,15 @@
-[*] riceteacatpanda
-[*] Category: general
-[*] Challenge: classic c4
-[*] Points: 30
-[*] Author: c4melman
+#### riceteacatpanda 2020
+#### - Category: general
+#### - Challenge: classic c4
+#### - Points: 30
+#### - Author: c4melman
 
-- - - Challenge text - - -
-If you use that bomb, you might cause an Avalanche...
-Let's not destroy my IO, ok?
-- - - - - - - - - - - - - -
+- - -
+*If you use that bomb, you might cause an Avalanche... Let's not destroy my IO, ok?*
+- - -
 The flag starts with c4
 Submit in the format: rtcp{90-char-flag}
-- - - - - - - - - - - - - -
+- - -
 
 In this challenge we are supplied with a text file called da_bomb.txt. Having a quick look at it we can see some strings that looks like they are encoded with base64. I wrote a quick python script to decode them all, which revealed this:
 
@@ -32,5 +31,5 @@ c42CW3TbiGhvptM36RJJ9ScctgkskjvZPo6dG8JexzZRvzQR6hwovZJLDkYK5pZ6cq9e7fX1ShUiYUdM
 
 starts with c4, is 90 chars long.
 This is the flag!
-
-[*] Flag: rtcp{c42CW3TbiGhvptM36RJJ9ScctgkskjvZPo6dG8JexzZRvzQR6hwovZJLDkYK5pZ6cq9e7fX1ShUiYUdM7H1Uuqj64G}
+- - -
+### Flag: rtcp{c42CW3TbiGhvptM36RJJ9ScctgkskjvZPo6dG8JexzZRvzQR6hwovZJLDkYK5pZ6cq9e7fX1ShUiYUdM7H1Uuqj64G}
