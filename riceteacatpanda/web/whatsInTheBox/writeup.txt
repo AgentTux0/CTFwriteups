@@ -1,0 +1,23 @@
+[*] riceteacatpanda
+[*] Category: web
+[*] Challenge: What's in the box?!
+[*] Points: 200
+[*] Author: c4melman
+
+- - - Challenge Text - - -
+ 📦 
+- - - - - - - - - - - - - -
+You may drag it to your bookmarks bar ;D
+- - - - - - - - - - - - - -
+
+Upon clicking the box all of a sudden there appears a cat. I then spammed the button a gazillion times and filled my browser with cute little cats! Now that obviously won't be the solution, let's dig in the developer console and see what these cats are all about. I dig in the html to see what the box actually does when we press it. And it seems we run a js script:
+
+
+function spawncat(){ var cat = document.createElement("IMG"); var cat_right =
+[...]
+; cat.setAttribute("src", cat_idle); var x = Math.random() * (window.innerWidth - 64); var y = Math.random() * (document.documentElement.scrollHeight - 64); var dx = 0; var dy = 0; var onGround = true; /*rtcp{*/ var ticks = 0; var jump_t = 20; var move_t = 180; cat.style.cssFloat = "left"; cat.style.position = "absolute"; cat.style.width = "64px"; cat.style.height = "64px"; cat.style.left = 0; cat.style.up = 0; cat.style.zIndex = 100000000; document.body.insertBefore(cat, document.body.firstChild); setInterval(function() { ticks++; if (onGround) { if (dx != 0) { if (ticks >= jump_t) { /*k4wA1*/ onGround = false; dy = 2 + Math.random() * 4; jump_t = ticks + Math.floor(Math.random() * 100) + 10; } } } else { dy -= 0.1; if (ticks >= jump_t) { onGround = true; dy = 0; /*I_kitT3nz*/ jump_t = ticks + Math.floor(Math.random() * 200) + 50; } } /*_4_tH*/ if (ticks >= move_t) { if (dx == 0) { var temp = Math.random(); if (temp > 0.5) { dx = 0.5 + Math.random(); cat.setAttribute("src", cat_right); } else { dx = -0.5 - Math.random(); /*3_w1N*/ cat.setAttribute("src", cat_left); } move_t = ticks + Math.floor(Math.random() * 200) + 25; } else { dx = 0; move_t = ticks + Math.floor(Math.random() * 200) + 25; cat.setAttribute("src", cat_idle); } } if (x + dx >= 0 && x + 64 + dx < window.innerWidth) { x += dx; } else if (x + dx < 0) { dx = 0; x = 0; } else { dx = 0; x = window.innerWidth - 64; } if (y - dy >= 0) { y -= dy; /*!!_4123*/ } else { dy = -dy; y = 0; } cat.style.left = (x + "px"); /*2345}*/ cat.style.top = (y + "px"); }, 20); }
+var i; for (i = 0; i < 2; i++) { spawncat(); }'
+
+Well, skimming trough the script I see some comments that sticks out, seems our flag is scattered throughout the script as comments! Then we just need to find them all and assemble the flag.
+
+[*] Flag: rtcp{k4wA1I_kitT3nz_4_tH3_w1N!!_41232345}
